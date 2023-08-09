@@ -2,12 +2,11 @@
 
 const container = document.querySelector('.container');
 const settings = document.querySelectorAll('.settings');
-const rainbowBtn = document.querySelector('.rainbowBtn');
-const eraserBtn = document.querySelector('.eraserBtn');
-const clearBtn = document.querySelector('.clearBtn');
-const sizeBtn = document.querySelector('.sizeBtn');
+const rainbowBtn = document.getElementById('rainbowBtn');
+const eraserBtn = document.getElementById('eraserBtn');
+const clearBtn = document.getElementById('clearBtn');
+const sizeBtn = document.getElementById('sizeBtn');
 const colorPall = document.getElementById('colorpicker');
-
 
 function createGrid(col, rows) {
     for (let i = 0; i < (col * rows); i++) {
@@ -66,7 +65,7 @@ function eraseGrid() {
     eraserBtn.addEventListener('click', () => {
         boxes.forEach(box => {
             box.addEventListener('mouseover', () => {
-                box.style.backgroundColor = 'rgb(255, 255, 255)'
+                box.style.backgroundColor = '#ecf0ff'
             })
         })
     })
@@ -77,7 +76,7 @@ function clearGrid() {
     const boxes = document.querySelectorAll('.grid-cell')
     clearBtn.addEventListener('click', () => {
         boxes.forEach(box => {
-            box.style.backgroundColor = 'rgb(255, 255, 255)'
+            box.style.backgroundColor = '#ecf0ff'
         })
     })
 }

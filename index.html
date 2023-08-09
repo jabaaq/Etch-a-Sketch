@@ -9,17 +9,23 @@
 </head>
 
 <body>
+    <header class="header">
+        <h1 class="title">Etch-a-sketch</h1>
+    </header>
     <div class="main">
-        <h1>Etch-a-sketch</h1>
         <div class="settings">
-            <label for="colorpicker">Color mode:</label>
-            <input type="color" id="colorpicker" value="#0000ff">
-            <button class="rainbowBtn">Rainbow mode</button>
-            <button class="eraserBtn">Eraser</button>
-            <button class="clearBtn">Clear</button>
-            <button class="sizeBtn">Grid size</button>
+            <label for="colorpicker" class="color-label">Color mode:</label>
+            <input type="color" id="colorpicker" class="color-input" value="#5452ff">
+            <button class="button" id="rainbowBtn">Rainbow mode</button>
+            <button class="button" id="eraserBtn">Eraser</button>
+            <button class="button" id="clearBtn">Clear</button>
+            <button class="button" id="sizeBtn">Grid size</button>
         </div>
         <div class="container"></div>
+        <footer class="footer">
+            <p>Copyright <a target="_blank" href="https://github.com/jabaaq">@jabaaq</a></p>
+
+        </footer>
     </div>
 
     <script src="/script.js"></script>
